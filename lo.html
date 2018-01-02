@@ -1,0 +1,110 @@
+<html><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/r20171212152908/recaptcha__en.js"></script><script>
+Object.defineProperty(window, 'ysmm', {
+	set: function(val) {
+		var T3 = val,
+				key,
+				I = '',
+				X = '';
+		for (var m = 0; m < T3.length; m++) {
+			if (m % 2 == 0) {
+				I += T3.charAt(m);
+			} else {
+				X = T3.charAt(m) + X;
+			}
+		}
+		T3 = I + X;
+		var U = T3.split('');
+		for (var m = 0; m < U.length; m++) {
+			if (!isNaN(U[m])) {
+				for (var R = m + 1; R < U.length; R++) {
+					if (!isNaN(U[R])) {
+						var S = U[m]^U[R];
+						if (S < 10) {
+							U[m] = S;
+						}
+						m = R;
+						R = U.length;
+					}
+				}
+			}
+		}
+		T3 = U.join('');
+		T3 = window.atob(T3);
+		T3 = T3.substring(T3.length - (T3.length - 16));
+		T3 = T3.substring(0, T3.length - 16);
+		key = T3;
+		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+			document.write('<!--');
+			window.stop();
+
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	}
+});
+</script><head><title>BLOXCreate - Home</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="http://materializecss.com/dist/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="http://materializecss.com/templates/starter-template/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> 
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
+  </head><body><nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="/" class="brand-logo">BLOXCreate</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/Login">Login</a></li>
+	<li><a href="/Register">Register</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
+                <li><a href="/Login">Login</a></li>
+	<li><a href="/Register">Register</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+<div style="padding-top:35px;"></div>
+<div style="width:1100px;" class="container">
+<div class="card-panel red darken-1 white-text"><center><table style="padding:0;margin:0;"><tbody><tr></tr></tbody></table>If you come across a glitched avatar, refresh it by right clicking and click reload frame! <a href="#">https://discord.gg/yEuwFvJ</a></center></div>
+<div style="padding-top:35px;"></div><style>
+body{
+background: url(http://i.imgur.com/Kw8Uz92.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+</style>
+
+<main>
+    <div id="hero" style="height: 598px;">
+        <div class="container" id="hero-text-container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <h1 id="hero-title" itemprop="description" style="font-size: 42px;"><strong class="bold">BLOX Create</strong><span class="thin"> is a leading game<br>platform for users of all ages</span></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="center-align">
+                        <a href="/Register" class="btn btn-large create-list-link hero-btn">Register<svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;" viewBox="0 0 24 24">
+<path fill="#ffffff" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"></path>
+</svg>
+
+</a>
+                        <a href="/Login" class="btn btn-large white grey-text hero-btn">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</main></div><div class="hiddendiv common"></div></body></html>
